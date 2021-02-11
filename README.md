@@ -1,4 +1,8 @@
 # Project Polymath
+A project to synthesize & generate artwork. 
+
+The first major exploration covers neural style transfer. 
+Later explorations will range from GANs, Image Transformers and so on.
 
 ## QUICKSTART
 ```
@@ -8,7 +12,6 @@ conda install -n polymath nb_conda_kernels
 conda install -c conda-forge python-dotenv
 pip install -r requirements.txt
 ```
-TODO: Install & Config PyTorch
 
 ## General Workflow 
 Most Python Scripts will have this structure. 
