@@ -65,12 +65,3 @@ if __name__ == '__main__':
     _YOUR_FUNCTION_()
 
 ```
-
-
-
-```
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/mitchell-reynolds/project_polymath.git
-git push -u origin main
-```
