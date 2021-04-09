@@ -6,6 +6,8 @@ Later explorations will range from GANs, Image Transformers and so on.
 
 ## QUICKSTART
 ```
+touch .env
+
 conda create --name polymath python=3.6.4
 conda activate polymath
 conda install -n polymath nb_conda_kernels

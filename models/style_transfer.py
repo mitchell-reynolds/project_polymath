@@ -9,12 +9,12 @@ from keras.models import Model
 from keras.applications.vgg16 import VGG16
 
 from scipy.optimize import fmin_l_bfgs_b
-from scipy.misc import imsave
+# from scipy.misc import imsave
 
-height = 512
-width = 512
+height = 2577
+width = 2577
 
-content_img = Image.open('../data/x')
+content_img = Image.open('../data/mitchell_1.jpg')
 content_img = content_img.resize((height, width))
 content_arr = np.asarray(content_img, dtype='float32')
 content_arr = np.expand_dims(content_arr, axis=0)
@@ -25,7 +25,7 @@ content_arr[:, :, :, 2] -= 123.68
 content_arr = content_arr[:, :, :, ::-1]
 content_img = backend.variable(content_arr)
 
-style_image_paths = ['../data/a', '../data/b']
+style_image_paths = ['../data/alina_1.png', '../data/alina_2.png']
 style_imgs = []
 for style_img_path in style_image_paths:
 	style_img = Image.open(style_img_path)
